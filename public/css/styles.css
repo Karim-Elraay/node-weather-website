@@ -28,6 +28,15 @@ header {
   }
 }
 
+span {
+  color: #888888;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .portrait {
   width: 250px;
 }

@@ -17,7 +17,15 @@ weatherForm.addEventListener("submit", (e) => {
         messageOne.textContent = data.error;
       } else {
         messageOne.textContent = data.location;
-        messageTwo.textContent = data.forecast;
+        messageTwo.innerHTML =
+          data.forecast.description +
+          ". It is currently " +
+          data.forecast.temperature +
+          "&#8451; degrees out. feels like " +
+          data.forecast.feelslike +
+          "&#8451;. There is a " +
+          data.forecast.cloudcover +
+          "% cloud cover.";
       }
     });
   });

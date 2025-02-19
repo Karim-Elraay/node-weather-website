@@ -16,15 +16,36 @@ body {
 header {
   margin-top: 16px;
   margin-bottom: 64px;
-
+  & nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    & .logo {
+      & img {
+        width: 100px;
+        transition: transform 0.3s ease-in-out;
+      }
+      & img:hover {
+        transform: scale(1.1);
+      }
+    }
+    & ul {
+      display: flex;
+      gap: 15px;
+      & li {
+        list-style: none;
+        & a {
+          color: #888888;
+          margin-right: 16px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
   & h1 {
     font-size: 64px;
     margin-bottom: 16px;
-  }
-  & a {
-    color: #888888;
-    margin-right: 16px;
-    text-decoration: none;
   }
 }
 

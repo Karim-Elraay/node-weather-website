@@ -1,3 +1,16 @@
+window.addEventListener("load", function () {
+  const currentPage = window.location.pathname;
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+
+    if (currentPage === link.pathname) {
+      link.classList.add("active");
+    }
+  });
+});
+
 const weatherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#message-1");

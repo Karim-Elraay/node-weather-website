@@ -1,6 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather</title>
   <link rel="icon" href="/img/weather.png">
   <link rel="stylesheet" href="/css/styles.css" />
@@ -9,11 +12,12 @@
 <body>
   <div class="main-content">
     {{>header}}
-
-    <p>Use this site to get your weather!</p>
+    <div class="main-container">
+      <h2>Use this site to get your weather!</h2>
+    </div>
 
     <form>
-      <input placeholder="location">
+      <input placeholder="Enter a city">
       <button>search</button>
     </form>
     <p id="message-1"></p>

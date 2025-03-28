@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About</title>
   <link rel="icon" href="/img/weather.png">
   <link rel="stylesheet" href="/css/styles.css" />
@@ -10,20 +12,85 @@
 <body>
   <div class="main-content">
     {{>header}}
-    <p>This site was created by <span>Karim Elraay</span>. It uses data from
-      <a href="https://locationiq.com/" target="_blank">
-        locationiq
-      </a>
-      and
-      <a href="https://weatherstack.com/" target="_blank">
-        weatherstack
-      </a>
-      !
-    </p>
-    <img class="portrait" src="img/IMG_1662.jpg" />
+    <div class="about-container">
+      <div class="text">
+        <p>Welcome to our Weather App, your reliable source for up-to-date weather information! Our app provides
+          accurate and real-time weather updates, ensuring that you are always prepared for the day ahead.</p>
+        <h2>How It Works</h2>
+        <p>Our weather app fetches data from <a href="https://locationiq.com/" target="_blank">
+            locationiq
+          </a>
+          and
+          <a href="https://weatherstack.com/" target="_blank">
+            weatherstack
+          </a> to provide you with real-time updates on weather
+          conditions, forecasts, and more. All you need to do is enter your location, and we'll give you the latest
+          weather information for that area.
+        </p>
+        <h2>Technology Behind the App</h2>
+        <ul>
+          <li>
+            <div class="cardHead"><svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="m3 2 1.578 17.824L12 22l7.467-2.175L21 2H3Zm14.049 6.048H9.075l.172 2.016h7.697l-.626 6.565-4.246 1.381-4.281-1.455-.288-2.932h2.024l.16 1.411 2.4.815 2.346-.763.297-3.005H7.416l-.562-6.05h10.412l-.217 2.017Z" />
+              </svg>
+              <h3>HTML</h3>
+            </div>
+            <p>structuring the web pages</p>
+          </li>
+          <li>
+            <div class="cardHead">
+              <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="48" height="48" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="m3 2 1.578 17.834L12 22l7.468-2.165L21 2H3Zm13.3 14.722-4.293 1.204H12l-4.297-1.204-.297-3.167h2.108l.15 1.526 2.335.639 2.34-.64.245-3.05h-7.27l-.187-2.006h7.64l.174-2.006H6.924l-.176-2.006h10.506l-.954 10.71Z" />
+              </svg>
+              <h3>CSS</h3>
+            </div>
+            <p>styling the app and creating a responsive design</p>
+          </li>
+          <li>
+            <div class="cardHead">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 50 50">
+                <path
+                  d="M45.274,2.325C45.084,2.118,44.817,2,44.536,2H5.464C5.183,2,4.916,2.118,4.726,2.325S4.443,2.81,4.468,3.089l3.52,39.427 c0.037,0.412,0.324,0.759,0.722,0.873l16.01,4.573C24.809,47.987,24.902,48,24.994,48s0.185-0.013,0.274-0.038l16.024-4.573 c0.398-0.114,0.685-0.461,0.722-0.873l3.518-39.427C45.557,2.81,45.463,2.532,45.274,2.325z M12,29.004l7,1.942V11h4v26l-11-3.051 V29.004z M38.054,22L37,34.25L27,37v-4.601l6.75-1.855l0.25-3.75L27,28V11h12l-0.345,4H31v8L38.054,22z">
+                </path>
+              </svg>
+              <h3>JavaScript</h3>
+            </div>
+            <p>client-side interactivity and fetching weather data</p>
+          </li>
+          <li>
+            <div class="cardHead">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 16 16">
+                <path
+                  d="M 8 1.0234375 C 7.736875 1.0234375 7.4742344 1.0924687 7.2402344 1.2304688 L 2.7402344 3.8789062 C 2.2832344 4.1469063 2 4.642875 2 5.171875 L 2 11.005859 C 2 11.554859 2.29925 12.059266 2.78125 12.322266 L 4.2558594 13.126953 C 4.4828594 13.250953 4.7286094 13.310547 4.9746094 13.310547 C 5.2386094 13.310547 5.4992812 13.239609 5.7382812 13.099609 C 6.1982812 12.826609 6.4726562 12.344594 6.4726562 11.808594 L 6.4726562 5.4648438 L 5.4726562 5.4648438 L 5.4726562 11.808594 C 5.4726562 12.065594 5.3025156 12.195281 5.2285156 12.238281 C 5.1555156 12.281281 4.959375 12.371047 4.734375 12.248047 L 3.2617188 11.445312 C 3.1007187 11.357312 3 11.188859 3 11.005859 L 3 5.171875 C 3 4.995875 3.0940938 4.8302344 3.2460938 4.7402344 L 7.7460938 2.0917969 C 7.9020937 1.9997969 8.0979062 2.0007969 8.2539062 2.0917969 L 12.753906 4.7402344 C 12.904906 4.8302344 13 4.995875 13 5.171875 L 13 11.009766 C 13 11.189766 12.900234 11.359219 12.740234 11.449219 L 8.2402344 13.900391 C 8.0902344 13.980391 7.9097656 13.980391 7.7597656 13.900391 L 6.8808594 13.419922 C 6.7108594 13.629922 6.5 13.810937 6.25 13.960938 C 6.17 14.010938 6.0897656 14.050078 6.0097656 14.080078 L 7.2792969 14.779297 C 7.5092969 14.899297 7.75 14.960938 8 14.960938 C 8.25 14.960938 8.4907031 14.899297 8.7207031 14.779297 L 13.220703 12.320312 C 13.700703 12.060313 14 11.559766 14 11.009766 L 14 5.171875 C 14 4.642875 13.717719 4.1469062 13.261719 3.8789062 L 8.7617188 1.2304688 C 8.5272187 1.0924688 8.263125 1.0234375 8 1.0234375 z M 9.4511719 5.3183594 C 7.8711719 5.3183594 7.0703125 5.8690781 7.0703125 6.9550781 C 7.0703125 8.1850781 8.4869687 8.3680781 9.1679688 8.4550781 C 9.2659688 8.4680781 9.352875 8.4791875 9.421875 8.4921875 L 9.7207031 8.5449219 C 10.760703 8.7189219 11 8.836875 11 9.171875 C 11 9.333875 10.999172 9.8242188 9.4511719 9.8242188 C 8.1381719 9.8242188 7.8691406 9.4346094 7.8691406 8.8496094 L 6.8691406 8.8496094 C 6.8691406 9.7516094 7.3171719 10.824219 9.4511719 10.824219 C 11.557172 10.824219 12 9.925875 12 9.171875 C 12 7.913875 10.777719 7.7076406 9.8867188 7.5566406 L 9.5996094 7.5078125 C 9.5166094 7.4928125 9.4119219 7.4788438 9.2949219 7.4648438 C 8.6589219 7.3828438 8.0703125 7.2650312 8.0703125 6.9570312 C 8.0703125 6.7340313 8.0691719 6.3193594 9.4511719 6.3183594 C 10.370172 6.3183594 10.837891 6.6207969 10.837891 7.2167969 L 11.837891 7.2167969 C 11.837891 6.2997969 11.209172 5.3183594 9.4511719 5.3183594 z">
+                </path>
+              </svg>
+              <h3>Node.js</h3>
+            </div>
+            <p>running the server-side logic and handling requests</p>
+          </li>
+          <li>
+            <div class="cardHead">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 128 128">
+                <path
+                  d="M14.59 62.67a7.14 7.14 0 002.31-3.48c.46-2 .36-3.94-2.31-5.3C7.82 50.47 3.45 56.57 2.77 58s-1.74 3.68-1 8.84 3.19 9.9 11 11.73a32.89 32.89 0 0022-2.57c6.84-3.26 19.7-9 22.94-9.58a28.15 28.15 0 016.49-.81v-7.85a18 18 0 00-17.38-9.15C34.43 49.59 29.51 56 26.49 58.7s-8.61 9.17-12.37 8-4.81-5.7-3.48-7.14 2.37-1.18 3.18 0a6.24 6.24 0 01.77 3.11z" />
+                <path
+                  d="M113.41 62.67a7.14 7.14 0 01-2.31-3.48c-.46-2-.36-3.94 2.31-5.3 6.76-3.43 11.13 2.67 11.81 4.11s1.74 3.68 1 8.84-3.19 9.9-11 11.73A32.89 32.89 0 0193.23 76c-6.84-3.26-19.7-9-22.94-9.58a28.15 28.15 0 00-6.49-.81v-7.85a18 18 0 0117.38-9.15c12.39 1 17.32 7.38 20.34 10.08s8.61 9.17 12.37 8 4.81-5.76 3.48-7.19-2.37-1.18-3.18 0a6.24 6.24 0 00-.78 3.17z" />
+              </svg>
+              <h3>Handlebars</h3>
+            </div>
+            <p>rendering dynamic content and templating</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 
   {{>footer}}
+  <script src="/js/app.js"></script>
 </body>
 
 </html>
